@@ -1,0 +1,45 @@
+.tech {
+  color: var(--accent);
+  display: inline-block;
+  position: relative;
+  width: 140px;
+  text-align: left;
+}
+
+.visible {
+  animation: slide-in 0.4s ease forwards;
+}
+
+.hidden {
+  animation: slide-out 0.3s ease forwards;
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0.6em);
+    opacity: 0;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-0.6em);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .visible,
+  .hidden {
+    animation: none;
+    opacity: 1;
+  }
+}

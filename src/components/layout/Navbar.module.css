@@ -1,0 +1,70 @@
+.header {
+  border-bottom: 1px solid var(--border);
+}
+
+.nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px;
+}
+
+.logo {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.link {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: color 0.15s ease;
+}
+
+.link:hover {
+  color: var(--text);
+}
+
+.cvButton {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition:
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.cvButton:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  color: var(--text-muted);
+}
+
+.socials a {
+  display: flex;
+  transition: color 0.15s ease;
+}
+
+.socials a:hover {
+  color: var(--accent);
+}
