@@ -18,7 +18,7 @@ export function CaseStudyLayout({ project, sections }: Props) {
     <main className={styles.main}>
       <div className={styles.container}>
         {/* Back link */}
-        <Link href="/proyectos" className={styles.back}>
+        <Link href="/projects" className={styles.back}>
           <span>←</span>
           <span>Todos los proyectos</span>
         </Link>
@@ -42,28 +42,57 @@ export function CaseStudyLayout({ project, sections }: Props) {
               ))}
             </div>
             <div className={styles.links}>
-              {project.links.demo && (
-                <a
-                  href={project.links.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.primaryLink}
-                >
-                  <span>Ver demo</span>
-                  <span>↗</span>
-                </a>
-              )}
-              {project.links.repo && (
-                <a
-                  href={project.links.repo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.secondaryLink}
-                >
-                  <span>GitHub</span>
-                  <span>↗</span>
-                </a>
-              )}
+              <div className={styles.statusBadge}>
+                {project.links.demo ? (
+                  <a
+                    href={project.links.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.primaryLink}
+                  >
+                    <span>Ver demo</span>
+                    <span>↗</span>
+                  </a>
+                ) : (
+                  <span className={styles.deployBadge}>
+                    🚧 Deploy en progreso
+                  </span>
+                )}
+              </div>
+              <div className={styles.repoLinks}>
+                {project.links.repoFront && (
+                  <a
+                    href={project.links.repoFront}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.secondaryLink}
+                  >
+                    <span>Frontend</span>
+                    <span>↗</span>
+                  </a>
+                )}
+                {project.links.repoBack && (
+                  <a
+                    href={project.links.repoBack}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.secondaryLink}
+                  >
+                    <span>Backend</span>
+                    <span>↗</span>
+                  </a>
+                )}
+                {project.links.document && (
+                  <a
+                    href={project.links.document}
+                    download
+                    className={styles.secondaryLink}
+                  >
+                    <span>Memoria TFG</span>
+                    <span>↗</span>
+                  </a>
+                )}
+              </div>
             </div>
           </div>
         </header>

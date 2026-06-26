@@ -39,6 +39,9 @@ export const projects: Project[] = [
       "Red social con perfiles, feed de viajes y chats entre viajeros",
     ],
     links: {
+      // demo: "https://hostelhub.vercel.app/",
+      document:
+        "https://docs.google.com/document/d/1g0k3J6x5Z7F8G9H2I3J4K5L6M7N8O9P0Q1R2S3T4U5V/edit?usp=sharing",
       repoFront: "https://github.com/IsraQuirozZ/hostelhub-frontend",
       repoBack: "https://github.com/IsraQuirozZ/hostelhub-backend",
     },

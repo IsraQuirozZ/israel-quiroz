@@ -42,40 +42,55 @@ export function ProjectList({ projects }: Props) {
           <div className={styles.actions}>
             {project.caseStudy ? (
               <>
-                <Link
-                  href={`/projects/${project.slug}`}
-                  className={styles.primaryButton}
-                >
-                  <span>Ver caso</span>
-                  <span>→</span>
-                </Link>
-                {project.links.repo && (
+                <div className={styles.primaryAction}>
+                  <span className={styles.deployBadge}>🚧 En progreso</span>
+                  <Link
+                    href={`/projects/${project.slug}`}
+                    className={styles.primaryButton}
+                  >
+                    <span>Ver caso</span>
+                    <span>→</span>
+                  </Link>
+                </div>
+                {project.links.repoFront && (
                   <a
-                    href={project.links.repo}
+                    href={project.links.repoFront}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.secondaryButton}
                   >
-                    <span>GitHub</span>
+                    <span>Frontend</span>
+                    <span>↗</span>
+                  </a>
+                )}
+                {project.links.repoBack && (
+                  <a
+                    href={project.links.repoBack}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.secondaryButton}
+                  >
+                    <span>Backend</span>
                     <span>↗</span>
                   </a>
                 )}
               </>
             ) : (
-              <>
+              <div className={styles.primaryAction}>
                 <span className={styles.privateNote}>
                   Código privado
                   <br />
                   empresa
                 </span>
+
                 <Link
-                  href={`/proyectos/${project.slug}`}
+                  href={`/projects/${project.slug}`}
                   className={styles.primaryButton}
                 >
                   <span>Ver demo</span>
                   <span>→</span>
                 </Link>
-              </>
+              </div>
             )}
           </div>
         </article>

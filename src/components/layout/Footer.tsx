@@ -1,4 +1,8 @@
-import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
+import {
+  IconBrandGithub,
+  IconBrandLinkedin,
+  IconMail,
+} from "@tabler/icons-react";
 import styles from "./Footer.module.css";
 
 export function Footer() {
@@ -7,7 +11,9 @@ export function Footer() {
       <div className={styles.content}>
         <div className={styles.contact}>
           <p className={styles.label}>¿Trabajamos juntos?</p>
+
           <a href="mailto:israel.quiroz@example.com" className={styles.email}>
+            <IconMail size={20} />
             Contáctame
           </a>
         </div>
