@@ -1,3 +1,4 @@
+import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
 import styles from "./Footer.module.css";
 
 export function Footer() {
@@ -10,15 +11,35 @@ export function Footer() {
             Contáctame
           </a>
         </div>
+        <div className={styles.socials}>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            className={styles.socialLink}
+          >
+            <IconBrandGithub size={30} />
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            className={styles.socialLink}
+          >
+            <IconBrandLinkedin size={30} />
+          </a>
+        </div>
         <p className={styles.meta}>
           Hecho con Next.js, TypeScript &amp; CSS Modules · Desplegado en Vercel
         </p>
-      </div>
-      <div className={styles.bottom}>
-        <p className={styles.copyright}>
-          &copy; {new Date().getFullYear()} Israel Quiroz. Todos los derechos
-          reservados.
-        </p>
+        <div className={styles.bottom}>
+          <p className={styles.copyright}>
+            &copy; {new Date().getFullYear()} Israel Quiroz. Todos los derechos
+            reservados.
+          </p>
+        </div>
       </div>
     </footer>
   );

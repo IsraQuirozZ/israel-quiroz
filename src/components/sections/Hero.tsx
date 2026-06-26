@@ -9,7 +9,7 @@ export function Hero() {
         Disponible para nuevas oportunidades
       </p>
       <h1 className={styles.title}>
-        Hola, soy <span className={styles.accent}>Israel Quiroz</span> —{" "}
+        Hola, soy <span className={styles.accent}>Isra QuirozZ</span> —{" "}
         fullstack developer con experiencia real en <AnimatedTech />
       </h1>
       <p className={styles.subtitle}>

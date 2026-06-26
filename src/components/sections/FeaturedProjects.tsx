@@ -43,7 +43,7 @@ export function FeaturedProjects() {
                 </div>
                 {project.caseStudy ? (
                   <Link
-                    href={`/proyectos/${project.slug}`}
+                    href={`/projects/${project.slug}`}
                     className={styles.link}
                   >
                     <span>Ver proyecto</span>

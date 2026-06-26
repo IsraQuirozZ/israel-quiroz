@@ -1,0 +1,127 @@
+.main {
+  padding: 64px 0;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.header {
+  margin-bottom: 64px;
+}
+
+.eyebrow {
+  font-family: var(--font-mono), monospace;
+  font-size: 13px;
+  color: var(--accent);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.title {
+  font-family: var(--font-display), sans-serif;
+  font-size: clamp(28px, 5vw, 42px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sectionTitle {
+  font-family: var(--font-display), sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text);
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.section p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--text-muted);
+}
+
+.section p strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.cta {
+  margin-top: 80px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.ctaText {
+  font-size: 16px;
+  color: var(--text-muted);
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--bg);
+  background: var(--accent);
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: 1px solid var(--accent);
+  white-space: nowrap;
+  transition: opacity 0.15s ease;
+}
+
+.ctaButton span:last-child {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.ctaButton:hover {
+  opacity: 0.85;
+}
+
+.ctaButton:hover span:last-child {
+  transform: translateX(4px);
+}
+
+@media (max-width: 640px) {
+  .cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -7,7 +7,9 @@ export type Project = {
   image: string;
   links: {
     demo?: string;
-    repo?: string;
+    repoFront?: string;
+    repoBack?: string;
+    document?: string;
   };
   featured: boolean;
   caseStudy: boolean;
@@ -37,7 +39,8 @@ export const projects: Project[] = [
       "Red social con perfiles, feed de viajes y chats entre viajeros",
     ],
     links: {
-      repo: "https://github.com/israquirozz/hostelhub",
+      repoFront: "https://github.com/IsraQuirozZ/hostelhub-frontend",
+      repoBack: "https://github.com/IsraQuirozZ/hostelhub-backend",
     },
     featured: true,
     caseStudy: true,
@@ -54,7 +57,8 @@ export const projects: Project[] = [
       "Módulo de proveedores y clientes con historial de operaciones",
     ],
     links: {
-      repo: "https://github.com/israquirozz/iq-erp",
+      repoFront: "https://github.com/IsraQuirozZ/erp-frontend",
+      repoBack: "https://github.com/IsraQuirozZ/erp-backend",
     },
     image: "/images/projects/placeholder.png",
     featured: true,

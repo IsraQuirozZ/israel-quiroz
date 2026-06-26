@@ -6,7 +6,7 @@
 .content {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 30px 32px 0;
+  padding: 30px 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,12 +37,29 @@
   color: var(--text-muted);
 }
 
+.socials {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.socialLink {
+  display: flex;
+  color: var(--text-muted);
+  transition: color 0.15s ease;
+}
+
+.socialLink:hover {
+  color: var(--accent);
+}
+
 .bottom {
-  max-width: 1100px;
-  margin: 30px auto;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
 }
 
 @media (max-width: 640px) {
