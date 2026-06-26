@@ -11,7 +11,7 @@ export function Navbar() {
         </Link>
 
         <div className={styles.links}>
-          <Link href="/proyectos" className={styles.link}>
+          <Link href="/projects" className={styles.link}>
             Proyectos
           </Link>
           <Link href="/about" className={styles.link}>

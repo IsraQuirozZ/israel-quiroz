@@ -1,4 +1,4 @@
-/* ===== Design tokens ===== */
+/*  Design tokens  */
 :root {
   --bg: #0f0f10;
   --bg-card: #1a1a1c;
@@ -17,7 +17,7 @@
   --space-7: 96px;
 }
 
-/* ===== Reset ===== */
+/*  Reset  */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -49,4 +49,20 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+/*  Utilities  */
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.link-arrow span:last-child {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.link-arrow:hover span:last-child {
+  transform: translateX(4px);
 }

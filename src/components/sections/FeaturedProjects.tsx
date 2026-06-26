@@ -8,8 +8,9 @@ export function FeaturedProjects() {
     <section className={styles.section}>
       <div className={styles.header}>
         <h2 className={styles.title}>Proyectos destacados</h2>
-        <Link href="/proyectos" className={styles.seeAll}>
-          Ver todos →
+        <Link href="/projects" className={`${styles.seeAll} link-arrow`}>
+          <span>Ver todos</span>
+          <span>→</span>
         </Link>
       </div>
       <div className={styles.grid}>
@@ -45,7 +46,8 @@ export function FeaturedProjects() {
                     href={`/proyectos/${project.slug}`}
                     className={styles.link}
                   >
-                    Ver proyecto →
+                    <span>Ver proyecto</span>
+                    <span className={styles.arrow}>→</span>
                   </Link>
                 ) : (
                   <span className={styles.badge}>Experiencia laboral</span>

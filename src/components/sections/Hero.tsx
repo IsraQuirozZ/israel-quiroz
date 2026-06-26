@@ -18,7 +18,7 @@ export function Hero() {
         problemas reales con criterio propio.
       </p>
       <div className={styles.actions}>
-        <a href="/proyectos" className={styles.primaryButton}>
+        <a href="/projects" className={styles.primaryButton}>
           Ver proyectos
         </a>
         <a href="/cv.pdf" download className={styles.secondaryButton}>
