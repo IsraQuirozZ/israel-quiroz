@@ -30,7 +30,7 @@ export function CaseStudyLayout({ project, sections }: Props) {
               <span className={styles.badge}>Experiencia laboral</span>
             )}
             <h1 className={styles.title}>{project.name}</h1>
-            <p className={styles.description}>{project.shortDescription}</p>
+            <p className={styles.description}>{project.longDescription}</p>
           </div>
 
           <div className={styles.meta}>

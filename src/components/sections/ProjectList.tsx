@@ -28,7 +28,7 @@ export function ProjectList({ projects }: Props) {
                 <span className={styles.badge}>Experiencia laboral</span>
               )}
               <h2 className={styles.name}>{project.name}</h2>
-              <p className={styles.description}>{project.shortDescription}</p>
+              <p className={styles.description}>{project.longDescription}</p>
             </div>
             <div className={styles.tags}>
               {project.stack.map((tech) => (
