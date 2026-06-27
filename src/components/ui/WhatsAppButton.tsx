@@ -3,14 +3,13 @@
 import { useState, useEffect } from "react";
 import styles from "./WhatsAppButton.module.css";
 
-const WA_NUMBER = "34XXXXXXXXX"; // Reemplazá con tu número real
+const WA_NUMBER = "34624677627";
 const WA_MESSAGE = "Hola Isra, vi tu portfolio y me gustaría hablar contigo.";
 
 export function WhatsAppButton() {
   const [showBubble, setShowBubble] = useState(false);
 
   useEffect(() => {
-    // No mostrar el globo si ya lo cerró en esta sesión
     const dismissed = sessionStorage.getItem("wa-bubble-dismissed");
     if (dismissed) return;
 

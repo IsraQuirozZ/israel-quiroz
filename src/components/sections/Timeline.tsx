@@ -7,7 +7,7 @@ const milestones = [
     subtitle: "Fullstack desde cero, autodidacta",
   },
   {
-    year: "2023",
+    year: "2022 - 2023",
     title: "Fullstack Developer",
     subtitle: "Coderhouse — Remoto",
   },

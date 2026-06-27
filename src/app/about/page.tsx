@@ -52,7 +52,7 @@ export default function AboutPage() {
             ¿Trabajamos juntos o simplemente charlamos sobre un proyecto?
           </p>
           <a
-            href="https://wa.me/34XXXXXXXXX"
+            href="https://wa.me/34624677627?text=Hola%20Isra,%20vi%20tu%20portfolio%20y%20me%20gustaría%20hablar%20contigo."
             target="_blank"
             rel="noopener noreferrer"
             className={styles.ctaButton}

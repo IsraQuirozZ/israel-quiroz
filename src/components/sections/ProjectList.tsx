@@ -83,13 +83,13 @@ export function ProjectList({ projects }: Props) {
                   empresa
                 </span>
 
-                <Link
+                {/* <Link
                   href={`/projects/${project.slug}`}
                   className={styles.primaryButton}
                 >
                   <span>Ver demo</span>
                   <span>→</span>
-                </Link>
+                </Link> */}
               </div>
             )}
           </div>

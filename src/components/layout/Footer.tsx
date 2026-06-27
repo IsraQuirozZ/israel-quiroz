@@ -12,14 +12,14 @@ export function Footer() {
         <div className={styles.contact}>
           <p className={styles.label}>¿Trabajamos juntos?</p>
 
-          <a href="mailto:israel.quiroz@example.com" className={styles.email}>
+          <a href="mailto:israel_quirozz@hotmail.com" className={styles.email}>
             <IconMail size={20} />
             Contáctame
           </a>
         </div>
         <div className={styles.socials}>
           <a
-            href="#"
+            href="https://github.com/israquirozz"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -28,7 +28,7 @@ export function Footer() {
             <IconBrandGithub size={30} />
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/israel-quirozz"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"

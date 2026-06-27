@@ -89,7 +89,7 @@ export function CaseStudyLayout({ project, sections }: Props) {
                     className={styles.secondaryLink}
                   >
                     <span>Memoria TFG</span>
-                    <span>↗</span>
+                    <span>↓</span>
                   </a>
                 )}
               </div>
