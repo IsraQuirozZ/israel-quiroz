@@ -55,7 +55,7 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <a href="/cv.pdf" download className={styles.cvButton}>
+            <a href="/documents/cv.pdf" download className={styles.cvButton}>
               CV
             </a>
             <div className={styles.socials}>
@@ -109,7 +109,11 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
-          <a href="/cv.pdf" download className={styles.mobileCvButton}>
+          <a
+            href="/documents/cv.pdf"
+            download
+            className={styles.mobileCvButton}
+          >
             Descargar CV
           </a>
           <div className={styles.mobileSocials}>

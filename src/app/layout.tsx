@@ -24,6 +24,9 @@ export const metadata: Metadata = {
   title: "Israel Quiroz — Desarrollador Fullstack",
   description:
     "Portfolio de desarrollo fullstack: React, Next.js, Node.js y PostgreSQL.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({

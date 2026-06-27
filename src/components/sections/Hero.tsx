@@ -21,7 +21,7 @@ export function Hero() {
         <a href="/projects" className={styles.primaryButton}>
           Ver proyectos
         </a>
-        <a href="/cv.pdf" download className={styles.secondaryButton}>
+        <a href="/documents/cv.pdf" download className={styles.secondaryButton}>
           Descargar CV
         </a>
       </div>
