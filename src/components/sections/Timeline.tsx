@@ -14,12 +14,12 @@ const milestones = [
   { year: "2024", title: "FP en DAM", subtitle: "Ilerna — Madrid" },
   {
     year: "2024",
-    title: "Dieta App",
+    title: "ILERNA",
     subtitle: "Prácticas — proyecto interno",
   },
   {
-    year: "2025",
-    title: "COEMAC Networking",
+    year: "2026",
+    title: "SEOLOCAL GUALDALWEB",
     subtitle: "Prácticas — agencia web",
   },
   {
