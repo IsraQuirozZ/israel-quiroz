@@ -127,7 +127,7 @@ export function Navbar() {
               <IconBrandGithub size={30} />
             </a>
             <a
-              href="https://linkedin.com/in/tu-usuario"
+              href="https://www.linkedin.com/in/israel-quirozz"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
