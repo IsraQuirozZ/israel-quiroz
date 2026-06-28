@@ -25,7 +25,7 @@ export const projects: Project[] = [
       "Aplicación móvil de reservas de hostales +  red social para viajeros con integración de IA.",
     longDescription:
       "Aplicación móvil de reservas de hostales con  red social entre viajeros. Con autenticación JWT, chat entre usuarios, creación de publicaciones con subida de imágenes e integración de IA para creación de rutas. Modelo relacional propio y arquitectura fullstack completa.",
-    image: "/images/projects/placeholder.png",
+    image: "/images/projects/hh.webp",
     stack: [
       "React Native",
       "Expo",
@@ -76,7 +76,7 @@ export const projects: Project[] = [
       repoFront: "https://github.com/IsraQuirozZ/erp-frontend",
       repoBack: "https://github.com/IsraQuirozZ/erp-backend",
     },
-    image: "/images/projects/placeholder.png",
+    image: "/images/projects/iq-erp.webp",
     featured: true,
     caseStudy: true,
   },
@@ -101,7 +101,7 @@ export const projects: Project[] = [
       "Desarrollada en equipo con metodología ágil informal",
     ],
     links: {},
-    image: "/images/projects/placeholder.png",
+    image: "/images/projects/c-networking.webp",
     featured: true,
     caseStudy: false,
     isWorkExperience: true,
